@@ -1,0 +1,456 @@
+@import url("https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Poppins:ital,wght@0,300;0,400;0,500;0,600;1,100&family=Rajdhani&family=Raleway&family=Source+Code+Pro:wght@200&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;1,100&family=Satisfy&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+
+body {
+  --side-bar-lr: 18rem;
+  --side-bar-md: 4rem;
+}
+
+li {
+  margin: 0 0px;
+  padding: 1rem 0rem 1rem 0rem;
+  list-style-type: none;
+  font-family: "Poppins", sans-serif;
+  font-size: 1.2rem;
+  font-weight: 400;
+  border-radius: 10cm;
+  transition: all 0.1s ease-in;
+  padding-left: 1.2rem;
+  /*   display:flex;
+  align-items:center;
+  justify-content:center; */
+
+  /*   text-align:center; */
+}
+li span {
+  font-family: "Poppins", sans-serif;
+  font-size: 1rem;
+  font-weight: 100;
+}
+
+li:hover {
+  scale: 1.01;
+}
+li:hover {
+  background-color: aliceblue;
+}
+li i {
+  padding: 0 1rem 0 0;
+  font-weight: bold;
+}
+ul {
+  display: flex;
+  flex-direction: column;
+  /*   padding-left: 1.4rem; */
+  list-style-type: none;
+  font-size: 2rem;
+}
+.main {
+  width: 100vw;
+  position: relative;
+  display: flex;
+  flex-direction: row;
+}
+.side-bar {
+  position: relative;
+  border: 1px solid;
+  border-color: aliceblue;
+  width: var(--side-bar-lr);
+  height: 100vh;
+  display: flex;
+  justify-content: start;
+  flex-direction: column;
+  align-items: left;
+  text-decoration: none;
+}
+.side-bar .logo-name {
+  background-color: white;
+  padding: 3rem 1rem 2rem 1.3rem;
+  font-family: "Satisfy", cursive;
+}
+.logo {
+  display: none;
+}
+
+.more {
+  margin-top: 15rem;
+}
+.mid-content {
+  background-color: #fbfbfb;
+  position: static;
+  border: 1px solid;
+  border-color: aliceblue;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-content: center;
+  flex-direction: column;
+  justify-content: left;
+  overflow: scroll;
+}
+.mid-content::-webkit-scrollbar {
+  display: none;
+}
+.profile-details {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 7rem;
+}
+
+.profile-image {
+  position: relative;
+  margin: 2.5rem 0.7rem;
+  border-radius: 50%;
+  background: radial-gradient(
+    circle at 30% 107%,
+    #fdf497 0%,
+    #fdf497 5%,
+    #fd5949 45%,
+    #d6249f 60%,
+    #285aeb 90%
+  );
+  width: 12.5rem;
+  height: 12.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.profile-image img {
+  border-radius: 50%;
+  padding: 2px;
+  background-color: white;
+  width: 12rem;
+  height: 12rem;
+  object-fit: cover;
+}
+.description {
+  width: 600px;
+  height: 300px;
+}
+.btn-follow {
+  display: flex;
+  gap: 1rem;
+}
+.highlights {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  text-align: center;
+  gap: 50px;
+}
+.highlights div {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  margin: 0 0 5rem 0;
+}
+.highlights img {
+  object-fit: cover;
+  height: 110px;
+  width: 110px;
+  border: 1px rgb(178, 175, 175) solid;
+  border-radius: 50%;
+  padding: 2px 2px;
+}
+.post-navigation {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  margin-top: 10px;
+  margin-bottom: 20px;
+  padding: 10px 50px;
+  border-color: aliceblue;
+  color: rgba(108, 130, 150, 0.766);
+  font-weight: 100;
+  border-top: 1px rgb(223, 218, 218) solid;
+}
+
+.post-navigation h3 {
+  font-weight: 100;
+  font-size: 25px;
+}
+
+.post-wrapper {
+  padding: 0 230px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.post-wrapper div {
+  width: 100%;
+
+  aspect-ratio: 3 / 1;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.post {
+  width: 33%;
+  height: 100%;
+  padding: 2px 2px 0 0;
+}
+.description {
+  margin-top: 50px;
+}
+.description .line-1,
+.line-2,
+.line-3 {
+  display: flex;
+  flex-direction: row;
+  justify-content: start;
+  margin: 0px 0 20px 0;
+  gap: 30px;
+  font-size: 1.5rem;
+}
+.description .line-1 button {
+  padding: 10px 30px;
+  background-color: rgb(0, 149, 246);
+  color: white;
+  border: none;
+  font-weight: 500;
+  border-radius: 8px;
+  font-size: 20px;
+}
+.description .line-2 span {
+  font-family: "Poppins", sans-serif;
+  font-weight: 100;
+  font-size: 1.2rem;
+  margin-left: 10px;
+  color: black;
+}
+.description .line-3 span {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-size: 1rem;
+  color: rgb(92, 91, 91);
+}
+.alter-line-1 {
+  display: none;
+}
+.name {
+  display: flex;
+  flex-direction: column;
+  row-gap: 20px;
+  font-size: 1.2rem;
+}
+.alter-line-2 {
+  display: none;
+}
+.footer {
+  width: 100%;
+  height: 15rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  row-gap: 30px;
+}
+.footer span {
+  color: rgb(132, 129, 129);
+  font-family: "Poppins";
+  font-weight: 100;
+  font-size: 0.8rem;
+  padding: 0 5px;
+}
+.footer div {
+  text-align: center;
+}
+/*--------------->Media Querie(Medium Device)<--------------*/
+
+@media (max-width: 1200px) {
+  .side-bar {
+    width: var(--side-bar-md);
+  }
+  .side-bar ul span,
+  .more span {
+    display: none;
+  }
+  .logo-name {
+    display: none;
+  }
+  .logo {
+    display: block;
+  }
+  .logo i {
+    font-size: 1.5rem;
+  }
+  #img-6 {
+    display: none;
+  }
+
+  .post-wrapper div {
+    width: 100%;
+    height: 22rem;
+  }
+}
+
+/*--------------->Media Querie(Small Device)<--------------*/
+
+@media (max-width: 850px) {
+  .side-bar {
+    display: none;
+  }
+  .mid-content {
+    width: 100vw;
+    /* height: 100vh; */
+    overflow: visible;
+    overflow-x: hidden;
+  }
+  .btn-follow {
+    display: none;
+  }
+  .alter-line-1 {
+    display: block;
+    display: flex;
+    gap: 1rem;
+  }
+  .line-2 {
+    display: none;
+  }
+  .profile-image {
+    width: 6.1rem;
+    height: 6.1rem;
+  }
+  .profile-image img {
+    width: 6rem;
+    height: 6rem;
+  }
+  .line-3 {
+    position: relative;
+    left: -6.6rem;
+    top: 2rem;
+    font-size: 20px;
+  }
+  .line-3 div {
+    font-size: 0.8rem;
+  }
+  .profile-details {
+    gap: 0.5rem;
+  }
+  .description .line-1 button {
+    padding: 6px 20px;
+    font-family: "Poppins", cursive;
+    font-weight: 400;
+    border-radius: 8px;
+    font-size: 10px;
+  }
+  .description .line-1,
+  .line-2,
+  .line-3 {
+    margin: 0px 0 10px 0;
+    gap: 10px;
+    font-size: 1.3rem;
+  }
+  .description {
+    width: 600px;
+    height: 200px;
+  }
+
+  .description .line-3 span {
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-size: 0.6rem;
+    color: rgb(92, 91, 91);
+  }
+  .profile-details {
+    justify-content: start;
+  }
+
+  .highlights img {
+    object-fit: cover;
+    height: 70px;
+    width: 70px;
+    border: 2px rgb(178, 175, 175) solid;
+    border-radius: 50%;
+    padding: 2px 2px;
+  }
+  .highlights {
+    justify-content: left;
+    padding: 0 16px;
+  }
+  #img-6 {
+    display: flex;
+  }
+
+  .highlights {
+    gap: 30px;
+  }
+  .alter-line-2 {
+    width: 100vw;
+    display: flex;
+    justify-content: space-around;
+
+    font-weight: 100;
+    font-size: 25px;
+    border: 1px solid;
+    border-color: rgb(219, 219, 219);
+  }
+  .alter-line-2 div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: sans-serif;
+    font-weight: 100;
+    font-size: 0.9rem;
+    padding: 1rem 1rem;
+  }
+  .alter-line-2 span {
+    color: rgb(142, 142, 142);
+  }
+  .post-navigation {
+    width: 100vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    padding: 1rem 3rem;
+    border-color: rgb(219, 219, 219);
+    color: rgb(142, 142, 142);
+    border-top: 1px rgb(223, 218, 218) solid;
+  }
+  .post-navigation h3 {
+    font-size: 1.2rem;
+  }
+
+  .post-wrapper div {
+    width: 100%;
+    /*     height: 15rem; */
+    aspect-ratio: 3 / 1;
+  }
+  .post-wrapper {
+    padding: 0 00px;
+  }
+}
+/*--------------->Media Querie( Extra Small Device)<--------------*/
+@media (max-width: 600px) {
+  .highlights {
+    gap: 20px;
+  }
+  #img-5 {
+    display: none;
+  }
+  #img-6 {
+    display: none;
+  }
+
+  .post-wrapper div {
+    width: 100%;
+    height: 10rem;
+  }
+  .highlights div {
+    margin: 0 0 1rem 0;
+  }
+}
